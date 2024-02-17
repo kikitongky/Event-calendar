@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calendar</title>
+</head>
+<body>
+
+    <div class="planer">
+        <h1><i class='bx bxs-calendar'></i>Event Calendar</h1>
+        <div id="calendar" class="calendar-grid"></div>
+    </div>
+    
+    <button class="add-task-btn" onclick="showAddTaskModal()">Add Task</button>
+
+
+    <div id="add-task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddTaskModal()">&times;</span>
+            <h2>Add Task</h2>
+            <input type="date" id="task-date">
+            <input type="text" id="task-desc" placeholder="Task Description">
+            <button onclick="addTask()">Add Task</button>
+            
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
